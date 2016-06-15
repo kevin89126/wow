@@ -50,9 +50,31 @@ class Action():
     def attack(self):
         img = get_click_img(imgs, self.mouse)
         if not img:
+            self.last_att = None
             return
-        self.img = image_load(self.att, self.width, self.height)
-        img.hp = img.hp - 1
+        self.drag = 0
+        if self.last_att == None:
+            self.last_att = pygame.time.get_ticks()
+        now = pygame.time.get_ticks()
+        print now, self.last_att
+        if now - self.last_att >= self.speed:
+            self.img = image_load(self.att, self.width, self.height)
+            img.dmg = img.dmg + 1
+            self.last_att = now
+
+def hp_bar_pos(x, y, width, height, dmg, hp):
+    return [
+        (x,
+         y+height
+        ),
+        (x+width-(width/hp)*dmg,
+         y+height
+        )
+    ]
+ 
+
+def draw_hp_bar(screen, pointlist):
+    pygame.draw.lines(screen, green, False, pointlist, 5)
 
 
 class Role(Action):
@@ -72,16 +94,24 @@ class Role(Action):
         self.hp = 10
         self.mouse = (self.x ,self.y)
         self.dead = False
+        self.dmg = 0
+        self.speed = 1000
+        self.last_att = None
 
     def draw(self, surface):
         if self.dead:
             return
         surface.blit(self.img, (self.x, self.y))
+        pointlist = hp_bar_pos(self.x, self.y,
+                               self.width, self.height,
+                               self.dmg, self.hp)
+        draw_hp_bar(surface, pointlist)
+        
 
 def check_death():
     res = imgs[:]
     for img in res:
-        if img.hp == 0:
+        if img.hp == img.dmg:
             img.dead = True
             imgs.remove(img)
 
@@ -92,14 +122,21 @@ if __name__ == '__main__':
     pygame.display.set_caption('Hello World!')
     imgWidth = 50
     imgHeight = 100
-    which_imgs = {'att': '/Users/kevin/pygame/img/which_att.jpg', 'std': '/Users/kevin/pygame/img/which_std.jpg'}
-    death_imgs = {'att': '/Users/kevin/pygame/img/death_att.jpg', 'std': '/Users/kevin/pygame/img/death_std.jpg'}
+    green = (0, 255, 0)
+    which_imgs = {
+        'att': '/Users/kevin/wow/img/which_att.jpg',
+        'std': '/Users/kevin/wow/img/which_std.jpg'}
+    death_imgs = {
+        'att': '/Users/kevin/wow/img/death_att.jpg',
+        'std': '/Users/kevin/wow/img/death_std.jpg'}
     whitch = Role('which', which_imgs, imgWidth, imgHeight, 100, 100)
     death = Role('death', death_imgs, imgHeight, imgHeight, 300, 250)
     global imgs 
     imgs = [death]
+    clock = pygame.time.Clock()
 
     while True: # main game loop
+        clock.tick(60)
         for event in pygame.event.get():
             if event.type == QUIT:
                 pygame.quit()
