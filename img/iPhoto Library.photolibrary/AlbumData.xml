@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+<dict>
+	<key>Application Version</key>
+	<string>9.4</string>
+	<key>Archive Path</key>
+	<string>/Users/kevin/pygame/img/iPhoto Library.photolibrary</string>
+	<key>ArchiveId</key>
+	<string>1</string>
+	<key>Major Version</key>
+	<integer>2</integer>
+	<key>Minor Version</key>
+	<integer>0</integer>
+	<key>List of Albums</key>
+	<array>
+		<dict>
+			<key>AlbumId</key>
+			<integer>4</integer>
+			<key>AlbumName</key>
+			<string>Photos</string>
+			<key>Album Type</key>
+			<string>99</string>
+			<key>GUID</key>
+			<string>allPhotosAlbum</string>
+			<key>Master</key><true/>
+			<key>KeyList</key>
+			<array>
+				<string>1</string>
+				<string>3</string>
+				<string>5</string>
+			</array>
+			<key>PhotoCount</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>AlbumId</key>
+			<integer>10</integer>
+			<key>AlbumName</key>
+			<string>Flagged</string>
+			<key>Album Type</key>
+			<string>Flagged</string>
+			<key>GUID</key>
+			<string>flaggedAlbum</string>
+			<key>Sort Order</key>
+			<string>1</string>
+			<key>KeyList</key>
+			<array>
+			</array>
+			<key>PhotoCount</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>AlbumId</key>
+			<integer>7</integer>
+			<key>AlbumName</key>
+			<string>Last 12 Months</string>
+			<key>Album Type</key>
+			<string>Special Month</string>
+			<key>GUID</key>
+			<string>lastNMonthsAlbum</string>
+			<key>Sort Order</key>
+			<string>1</string>
+			<key>KeyList</key>
+			<array>
+				<string>1</string>
+				<string>3</string>
+				<string>5</string>
+			</array>
+			<key>PhotoCount</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>AlbumId</key>
+			<integer>8</integer>
+			<key>AlbumName</key>
+			<string>Last Import</string>
+			<key>Album Type</key>
+			<string>Regular</string>
+			<key>GUID</key>
+			<string>lastImportAlbum</string>
+			<key>TransitionSpeed</key>
+			<real>1.000000</real>
+			<key>ShuffleSlides</key><false/>
+			<key>Sort Order</key>
+			<string>1</string>
+			<key>KeyList</key>
+			<array>
+				<string>5</string>
+			</array>
+			<key>PhotoCount</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>AlbumId</key>
+			<integer>19</integer>
+			<key>GUID</key>
+			<string>lsH8l+dHT7SMWo2l5qvW6A</string>
+			<key>AlbumName</key>
+			<string>Jun 13, 2016</string>
+			<key>Album Type</key>
+			<string>Event</string>
+			<key>Sort Order</key>
+			<string>1</string>
+			<key>KeyPhotoKey</key>
+			<string>5</string>
+			<key>ProjectEarliestDateAsTimerInterval</key>
+			<real>487477964.00</real>
+			<key>KeyList</key>
+			<array>
+				<string>5</string>
+			</array>
+			<key>PhotoCount</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>AlbumId</key>
+			<integer>18</integer>
+			<key>GUID</key>
+			<string>THbvo24SQCSAilQZIjGsBw</string>
+			<key>AlbumName</key>
+			<string>Jun 13, 2016</string>
+			<key>Album Type</key>
+			<string>Event</string>
+			<key>Sort Order</key>
+			<string>1</string>
+			<key>KeyPhotoKey</key>
+			<string>3</string>
+			<key>ProjectEarliestDateAsTimerInterval</key>
+			<real>487476975.00</real>
+			<key>KeyList</key>
+			<array>
+				<string>3</string>
+			</array>
+			<key>PhotoCount</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>AlbumId</key>
+			<integer>15</integer>
+			<key>GUID</key>
+			<string>AlrL7QRPSLS3l1MpMca9HA</string>
+			<key>AlbumName</key>
+			<string>Jun 13, 2016</string>
+			<key>Album Type</key>
+			<string>Event</string>
+			<key>Sort Order</key>
+			<string>1</string>
+			<key>KeyPhotoKey</key>
+			<string>1</string>
+			<key>ProjectEarliestDateAsTimerInterval</key>
+			<real>487475117.00</real>
+			<key>KeyList</key>
+			<array>
+				<string>1</string>
+			</array>
+			<key>PhotoCount</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>List of Rolls</key>
+	<array>
+		<dict>
+			<key>RollID</key>
+			<integer>8</integer>
+			<key>ProjectUuid</key>
+			<string>AlrL7QRPSLS3l1MpMca9HA</string>
+			<key>RollName</key>
+			<string>Jun 13, 2016</string>
+			<key>RollDateAsTimerInterval</key>
+			<real>487446317.000000</real>
+			<key>KeyPhotoKey</key>
+			<string>1</string>
+			<key>PhotoCount</key>
+			<integer>1</integer>
+			<key>KeyList</key>
+			<array>
+			<string>1</string>
+			</array>
+		</dict>
+		<dict>
+			<key>RollID</key>
+			<integer>10</integer>
+			<key>ProjectUuid</key>
+			<string>THbvo24SQCSAilQZIjGsBw</string>
+			<key>RollName</key>
+			<string>Jun 13, 2016</string>
+			<key>RollDateAsTimerInterval</key>
+			<real>487448175.000000</real>
+			<key>KeyPhotoKey</key>
+			<string>3</string>
+			<key>PhotoCount</key>
+			<integer>1</integer>
+			<key>KeyList</key>
+			<array>
+			<string>3</string>
+			</array>
+		</dict>
+		<dict>
+			<key>RollID</key>
+			<integer>12</integer>
+			<key>ProjectUuid</key>
+			<string>lsH8l+dHT7SMWo2l5qvW6A</string>
+			<key>RollName</key>
+			<string>Jun 13, 2016</string>
+			<key>RollDateAsTimerInterval</key>
+			<real>487449164.000000</real>
+			<key>KeyPhotoKey</key>
+			<string>5</string>
+			<key>PhotoCount</key>
+			<integer>1</integer>
+			<key>KeyList</key>
+			<array>
+			<string>5</string>
+			</array>
+		</dict>
+	</array>
+	<key>List of Faces</key>
+	<dict>
+	</dict>
+	<key>Master Image List</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>Caption</key>
+			<string>WHICH</string>
+			<key>Comment</key>
+			<string> </string>
+			<key>GUID</key>
+			<string>Tx27IkVfTN67nWTBgHWpMw</string>
+			<key>Roll</key>
+			<integer>8</integer>
+			<key>Rating</key>
+			<integer>0</integer>
+			<key>ImagePath</key>
+			<string>/Users/kevin/pygame/img/iPhoto Library.photolibrary/Previews/2016/06/13/20160613-014900/Tx27IkVfTN67nWTBgHWpMw/WHICH.jpg</string>
+			<key>MediaType</key>
+			<string>Image</string>
+			<key>ModDateAsTimerInterval</key>
+			<real>487446587.527290</real>
+			<key>DateAsTimerInterval</key>
+			<real>487446317.000000</real>
+			<key>DateAsTimerIntervalGMT</key>
+			<real>487475117.000000</real>
+			<key>MetaModDateAsTimerInterval</key>
+			<real>487446590.681549</real>
+			<key>OriginalPath</key>
+			<string>/Users/kevin/pygame/img/iPhoto Library.photolibrary/Masters/2016/06/13/20160613-014900/WHICH.jpg</string>
+			<key>ThumbPath</key>
+			<string>/Users/kevin/pygame/img/iPhoto Library.photolibrary/Thumbnails/2016/06/13/20160613-014900/Tx27IkVfTN67nWTBgHWpMw/WHICH.jpg</string>
+		</dict>
+		<key>3</key>
+		<dict>
+			<key>Caption</key>
+			<string>which_org</string>
+			<key>Comment</key>
+			<string> </string>
+			<key>GUID</key>
+			<string>Ubzm%miPQEuIMq+X4KaTLg</string>
+			<key>Roll</key>
+			<integer>10</integer>
+			<key>Rating</key>
+			<integer>0</integer>
+			<key>ImagePath</key>
+			<string>/Users/kevin/pygame/img/iPhoto Library.photolibrary/Previews/2016/06/13/20160613-021659/Ubzm%miPQEuIMq+X4KaTLg/which_org.jpg</string>
+			<key>MediaType</key>
+			<string>Image</string>
+			<key>ModDateAsTimerInterval</key>
+			<real>487448310.459281</real>
+			<key>DateAsTimerInterval</key>
+			<real>487448175.000000</real>
+			<key>DateAsTimerIntervalGMT</key>
+			<real>487476975.000000</real>
+			<key>MetaModDateAsTimerInterval</key>
+			<real>487448311.002724</real>
+			<key>OriginalPath</key>
+			<string>/Users/kevin/pygame/img/iPhoto Library.photolibrary/Masters/2016/06/13/20160613-021659/which_org.jpg</string>
+			<key>ThumbPath</key>
+			<string>/Users/kevin/pygame/img/iPhoto Library.photolibrary/Thumbnails/2016/06/13/20160613-021659/Ubzm%miPQEuIMq+X4KaTLg/which_org.jpg</string>
+		</dict>
+		<key>5</key>
+		<dict>
+			<key>Caption</key>
+			<string>death_org</string>
+			<key>Comment</key>
+			<string> </string>
+			<key>GUID</key>
+			<string>X1mGp1ZmTvehh48s%JfegA</string>
+			<key>Roll</key>
+			<integer>12</integer>
+			<key>Rating</key>
+			<integer>0</integer>
+			<key>ImagePath</key>
+			<string>/Users/kevin/pygame/img/iPhoto Library.photolibrary/Previews/2016/06/13/20160613-023302/X1mGp1ZmTvehh48s%JfegA/death_org.jpg</string>
+			<key>MediaType</key>
+			<string>Image</string>
+			<key>ModDateAsTimerInterval</key>
+			<real>487449241.765449</real>
+			<key>DateAsTimerInterval</key>
+			<real>487449164.000000</real>
+			<key>DateAsTimerIntervalGMT</key>
+			<real>487477964.000000</real>
+			<key>MetaModDateAsTimerInterval</key>
+			<real>487449251.125670</real>
+			<key>OriginalPath</key>
+			<string>/Users/kevin/pygame/img/iPhoto Library.photolibrary/Masters/2016/06/13/20160613-023302/death_org.jpg</string>
+			<key>ThumbPath</key>
+			<string>/Users/kevin/pygame/img/iPhoto Library.photolibrary/Thumbnails/2016/06/13/20160613-023302/X1mGp1ZmTvehh48s%JfegA/death_org.jpg</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
