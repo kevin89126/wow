@@ -11,9 +11,3 @@ def gen_img_path(name):
         path = os.path.join(PWD, IMG_FOLD, _name)
         res[attr] = path + '.jpg'
     return res
-
-class ImgManager():
-
-    def __init__(self):
-        self.which = gen_img_path('which')
-        self.death = gen_img_path('death')
