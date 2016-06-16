@@ -126,6 +126,7 @@ if __name__ == '__main__':
     imgHeight = 100
     green = (0, 255, 0)
     which_imgs = img_mgr.which
+    print which_imgs
     death_imgs = img_mgr.death
     whitch = Role('which', which_imgs, imgWidth, imgHeight, 100, 100)
     death = Role('death', death_imgs, imgHeight, imgHeight, 300, 250)
