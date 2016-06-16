@@ -1,5 +1,6 @@
 import pygame, sys
 from pygame.locals import *
+from img import ImgManager
 import time
 
 def image_load(path, width, height):
@@ -117,18 +118,15 @@ def check_death():
 
 if __name__ == '__main__':
     pygame.init()
+    img_mgr = ImgManager()
     white = (255, 255, 255)
     screen = pygame.display.set_mode((600, 400))
     pygame.display.set_caption('Hello World!')
     imgWidth = 50
     imgHeight = 100
     green = (0, 255, 0)
-    which_imgs = {
-        'att': '/Users/kevin/wow/img/which_att.jpg',
-        'std': '/Users/kevin/wow/img/which_std.jpg'}
-    death_imgs = {
-        'att': '/Users/kevin/wow/img/death_att.jpg',
-        'std': '/Users/kevin/wow/img/death_std.jpg'}
+    which_imgs = img_mgr.which
+    death_imgs = img_mgr.death
     whitch = Role('which', which_imgs, imgWidth, imgHeight, 100, 100)
     death = Role('death', death_imgs, imgHeight, imgHeight, 300, 250)
     global imgs 
