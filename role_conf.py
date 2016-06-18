@@ -10,7 +10,7 @@ main_config = {
     'x': 100,
     'y': 100,
     'hp': 10,
-    'dead': False,
+    'dead': 0,
     'dmg': 0,
     'speed': 1000,
     'last_att': None,
@@ -18,7 +18,8 @@ main_config = {
     'mouse': None,
     'role': 'main',
     'monster': [],
-    'img': None
+    'img': None,
+    'mv_speed': 5
 }
 
 death_config =  {
@@ -30,14 +31,16 @@ death_config =  {
     'click': 0,
     'x': 250,
     'y': 250,
-    'hp': 10,
-    'dead': False,
+    'hp': 1,
+    'dead': 0,
     'dmg': 0,
-    'speed': 1000,
+    'speed': 1500,
     'last_att': None,
     'att_tp': 'short',
     'mouse': None,
     'role': 'monster',
     'main': None,
-    'img': None
+    'img': None,
+    'mv_speed': 3,
+    'reborn_time': 5000
 }

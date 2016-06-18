@@ -14,6 +14,8 @@ class MainAction(BaseAction):
 
     def attack(self):
         img = get_click_img(self.monsters, self.mouse)
+        if img == self:
+            return
         if not img or not self._check_att(self.att_tp, img):
             self.last_att = None
             self.can_move = True

@@ -17,20 +17,20 @@ class BaseAction():
             return
 
         # check if is too close with mouse
-        if abs(self.x - (tg_pt[0] - self.width/2)) < 5 and \
-           abs(self.y - (tg_pt[1] - self.height/2)) < 5:
+        if abs(self.x - (tg_pt[0] - int(self.width/2))) < 5 and \
+           abs(self.y - (tg_pt[1] - int(self.height/2))) < 5:
            self.can_move = False
            return
 
         self.img = image_load(self.imgs['std'], self.width, self.height)
-        if self.x < tg_pt[0] - self.width/2:
-            self.x = self.x + 1
-        elif tg_pt[0] - self.width/2 < self.x:
-            self.x = self.x - 1
-        if  self.y < tg_pt[1] - self.height/2:
-            self.y = self.y + 1
-        elif tg_pt[1] - self.height/2 < self.y:
-            self.y = self.y - 1
+        if self.x + self.mv_speed <= tg_pt[0] - int(self.width/2):
+            self.x = self.x + 1 * self.mv_speed
+        elif tg_pt[0] - int(self.width/2) <= self.x - self.mv_speed:
+            self.x = self.x - 1 * self.mv_speed
+        if  self.y + self.mv_speed <= tg_pt[1] - int(self.height/2):
+            self.y = self.y + 1 * self.mv_speed
+        elif tg_pt[1] - int(self.height/2) <= self.y -self.mv_speed:
+            self.y = self.y - 1 * self.mv_speed
 
     def base_attack(self, target):
         if self.last_att == None:
