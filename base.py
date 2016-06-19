@@ -17,8 +17,8 @@ class BaseAction():
             return
 
         # check if is too close with mouse
-        if abs(self.x - (tg_pt[0] - int(self.width/2))) < 5 and \
-           abs(self.y - (tg_pt[1] - int(self.height/2))) < 5:
+        if abs(self.x - (tg_pt[0] - int(self.width/2))) < self.mv_speed and \
+           abs(self.y - (tg_pt[1] - int(self.height/2))) < self.mv_speed:
            self.can_move = False
            return
 

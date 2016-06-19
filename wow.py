@@ -2,6 +2,7 @@ import pygame, sys
 from pygame.locals import *
 from role_conf import main_config, death_config
 from role import MainRole, MonsterRole
+from utils import image_load
 
 def check_death(screen, imgs, death_mons):
     res = imgs[:]
@@ -17,7 +18,6 @@ def check_bron(screen, imgs, death_mons):
     res = death_mons[:]
     for img in res:
         now = pygame.time.get_ticks()
-        print img.dead, now
         if img.dead and now - img.dead > img.reborn_time:
             img.dead = 0
             img.dmg = 0
@@ -33,13 +33,24 @@ def check_action(action, imgs):
         act = getattr(img, action)
         act()
 
+def check_back_img(back_img, main):
+    pass
+
+def check_exit(button):
+    if pygame.mouse.get_pressed()[0] == 1:
+        pos = pygame.mouse.get_pos()
+        if button.collidepoint(pos):
+            pygame.quit()
+            sys.exit()
+
 if __name__ == '__main__':
     pygame.init()
     white = (255, 255, 255)
-    screen = pygame.display.set_mode((1024, 2048))
+    screen = pygame.display.set_mode((1440, 900), FULLSCREEN)
     pygame.display.set_caption('Hello World!')
     green = (0, 255, 0)
     red = (0, 0, 255)
+    back_img = image_load('img/death_org.jpg', 4000, 4000)
     main = MainRole(main_config)
     death = MonsterRole(death_config)
     monsters = [death]
@@ -55,9 +66,11 @@ if __name__ == '__main__':
                 pygame.quit()
                 sys.exit()
         screen.fill(white)
+        screen.blit(back_img, (0,0))
+        button = pygame.draw.circle(screen, red, (10,10), 10, 5)
+        check_exit(button)
         main.update_monsters(monsters)
         death.update_main(main)
-        print monsters
         check_bron(screen, monsters, dead_mons)
         check_death(screen, monsters, dead_mons)
         main.check_mouse()

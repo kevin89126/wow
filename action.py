@@ -11,6 +11,7 @@ class MainAction(BaseAction):
         self.click = pygame.mouse.get_pressed()[0]
         if self.click == 1:
             self.mouse = pygame.mouse.get_pos()
+            print self.mouse
 
     def attack(self):
         img = get_click_img(self.monsters, self.mouse)
